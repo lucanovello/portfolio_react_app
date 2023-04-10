@@ -1,0 +1,113 @@
+.headerContainer {
+    width: 100%;
+    /* height: calc(100vh - var(--topNav-height)); */
+    padding: 10vh 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px dashed var(--bg-sec-color); */
+    text-shadow: 0px 0px 3px black;
+    z-index: 999;
+}
+
+.headerTextWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.3;
+}
+.headerTextTitle,
+.headerTextTitleSpan,
+.headerTextTitleSpanSide,
+.headerTextBody {
+    width: 100%;
+}
+.headerTextTitle,
+.headerTextTitleSpan,
+.headerTextTitleSpanSide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: var(--font-family-h1);
+    font-size: calc(24px + 5vw);
+    text-align: left;
+    line-height: 1.3;
+    transition: var(--logo-transition);
+}
+.headerTextTitle {
+    display: inline-flex;
+    color: var(--font-header-color);
+    font-weight: 100;
+    letter-spacing: -0.07em;
+}
+.headerTextTitleSpan,
+.headerTextTitleSpanSide {
+    width: 100%;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+
+.headerTextTitleSpan {
+    color: var(--primary-color);
+}
+.headerTextTitleSpanSide {
+    color: var(--secondary-color);
+}
+
+.headerTextBody,
+.headerTextBodySpan,
+.headerTextBodySpanSide {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 2vh;
+    font-family: var(--font-family-p);
+    font-size: calc(16px + 0.4vw);
+    transition: var(--logo-transition);
+}
+.headerTextBody:first-of-type {
+    margin-bottom: 0;
+}
+
+.headerTextBody {
+    color: var(--font-body-color);
+    font-weight: 300;
+    letter-spacing: -0.015em;
+}
+
+.headerTextBodySpan,
+.headerTextBodySpanSide {
+    font-weight: 800;
+}
+
+.headerTextBodySpan {
+    color: var(--font-header-color);
+}
+.headerTextBodySpanSide {
+    color: var(--font-header-color);
+}
+
+.headerTextBtn {
+    padding: 2vh 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-h1);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--font-header-color);
+    background: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    backdrop-filter: blur(3px) contrast(1.1);
+    -webkit-backdrop-filter: blur(3px) contrast(1.1);
+    cursor: pointer;
+    user-select: none;
+    transition: var(--btn-transition);
+}
+.headerTextBtn:hover {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--bg-color);
+}

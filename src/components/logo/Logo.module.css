@@ -1,0 +1,32 @@
+.logoWrapper {
+    width: var(--logoTop-width);
+    aspect-ratio: 1;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: calc((var(--sideNav-width) / 2) - (var(--logoTop-width) / 2));
+    transform: scale(1);
+    z-index: 99999;
+    user-select: none;
+    transition: var(--logo-transition);
+}
+
+.logoIconText {
+    position: absolute;
+    font-family: var(--font-family-logo);
+    font-size: 1.7em;
+    font-weight: 100;
+    letter-spacing: -0.04em;
+    color: white;
+    text-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 1);
+    transition: var(--btn-transition);
+}
+
+.logoIconTextSpan {
+    color: var(--canva);
+    font-weight: 900;
+    text-shadow: 0 0.04em 0.1em rgba(0, 0, 0, 0.5);
+}

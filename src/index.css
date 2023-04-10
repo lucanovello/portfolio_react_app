@@ -1,0 +1,97 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
+/* font-family: 'Source Serif Pro', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Jost', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'MuseoModerno', cursive; */
+
+:root {
+    /* VARIABLES ----------------------------------------------*/
+    --sideNav-width: calc(200px + 5vw);
+    --logoTop-width: 4em;
+    --topNav-height: calc(var(--logoTop-width) + 1.5vh);
+
+    --bg-color: hsl(210, 25%, 2%);
+    --bg-sec-color: hsl(216, 20%, 20%);
+    --bg-accent-color: hsl(240, 14%, 20%);
+
+    --primary-color: hsl(178, 100%, 45%);
+    --secondary-color: #dab10b;
+    --tri-color: hsl(204, 78%, 20%);
+
+    --primary-accent-color: hsla(202, 59%, 48%, 0.2);
+    --secondary-accent-color: hsla(49, 86%, 46%, 0.2);
+    --tri-accent-color: hsla(204, 79%, 20%, 0.2);
+
+    --font-family-logo: 'Poppins', sans-serif;
+    --font-family-h1: 'Poppins', sans-serif;
+    --font-family-p: 'Source Serif Pro', sans-serif;
+
+    --font-size-h1: calc(22px + 2vw);
+    --font-size-p: calc(15px + 0.2vw);
+
+    --font-weight-h1: 800;
+    --font-weight-p: 300;
+
+    --font-header-color: white;
+    --font-body-color: hsl(178, 30%, 75%);
+
+    --logo-transition: 1s ease;
+    --logo-transform-transition: 1s ease;
+    --btn-transition: 0.2s ease;
+
+    --html: #ff763c;
+    --css: #5084ff;
+    --js: #f0db4f;
+    --webgl: #be0707;
+    --react: #5ccfee;
+    --ts: #0074c2;
+    --node: #5aa743;
+    --express: silver;
+    --mongo: #66a754;
+    --rest: silver;
+    --canva: hsl(182, 100%, 38%);
+    --figma: silver;
+    --adobe: #cf1d24;
+    --git: #e44c30;
+
+    /* PRESETS ----------------------------------------------*/
+    font-family: 'Poppins', system-ui, 'Avenir', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background: linear-gradient(to top right, var(--bg-color), var(--bg-sec-color));
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

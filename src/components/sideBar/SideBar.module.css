@@ -1,0 +1,219 @@
+:root {
+    --html: #ff763c;
+    --css: #5084ff;
+    --js: #f0db4f;
+    --webgl: #be0707;
+    --react: #5ccfee;
+    --ts: #0074c2;
+    --node: #5aa743;
+    --express: silver;
+    --mongo: #66a754;
+    --rest: silver;
+    --canva: #00b9c1;
+    --figma: #silver;
+    --adobe: #cf1d24;
+    --git: #e44c30;
+}
+
+.sideBarContainerOpen,
+.sideBarContainerClose {
+    width: var(--sideNav-width);
+    padding: calc(var(--sideNav-width) / 2) calc(var(--sideNav-width) * 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: var(--bg-sec-color);
+    transition: var(--logo-transition);
+    row-gap: 3vh;
+    z-index: 999;
+}
+
+.sideBarContainerOpen {
+    left: 0;
+}
+.sideBarContainerClose {
+    left: calc(var(--sideNav-width) * -1.1);
+}
+
+.sideBarHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-family-h1);
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--text-header-color);
+}
+
+.sideBarHeaderBio {
+    margin-bottom: 3vh;
+    text-align: center;
+    align-items: center;
+}
+.sideBarHeaderSkills {
+    text-align: left;
+    align-items: flex-start;
+}
+.sideBarHeaderInterests {
+    text-align: left;
+    align-items: flex-start;
+}
+.sideBarHeaderLinks {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.sideBarHeaderName {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-family-h1);
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1;
+    color: var(--text-header-color);
+    white-space: nowrap;
+}
+
+.sideBarHeaderNameSpan {
+    font-weight: 900;
+    color: var(--secondary-color);
+    transition: 0.6s ease-in-out;
+}
+
+.sideBarHeaderText {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-family-p);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-body-color);
+}
+
+.sideBarMenuTitle {
+    font-family: var(--font-family-h1);
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.sideBarMenuWrapper {
+    width: 100%;
+    margin-left: 0.4em;
+    list-style: none;
+}
+
+.sideBarMenuItemIcon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.html {
+    color: var(--html);
+}
+.css {
+    color: var(--css);
+}
+.js {
+    color: var(--js);
+}
+.webgl {
+    color: var(--webgl);
+}
+.react {
+    color: var(--react);
+}
+.ts {
+    color: var(--ts);
+}
+.node {
+    color: var(--node);
+}
+.express {
+    color: var(--express);
+}
+.mongo {
+    color: var(--mongo);
+}
+.rest {
+    color: var(--rest);
+}
+.canva {
+    color: var(--canva);
+}
+.figma {
+    color: var(--figma);
+}
+.adobe {
+    color: var(--adobe);
+}
+.git {
+    color: var(--git);
+}
+
+.sideBarMenuItem,
+.sideBarMenuItemLink {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-family-p);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    color: var(--text-body-color);
+    cursor: pointer;
+    column-gap: 0.75em;
+    transition: 0.2s ease;
+}
+
+.sideBarMenuItemLinkIcon {
+    transition: 0.2s ease;
+}
+
+.linkedIn,
+.gitHub,
+.codePen {
+    transition: 0.2s ease;
+}
+
+.linkedIn {
+    width: 1rem;
+}
+.gitHub {
+    color: silver;
+}
+.codePen {
+    color: silver;
+}
+
+.sideBarMenuItem:hover {
+    color: white;
+}
+
+.sideBarMenuItem:hover .sideBarMenuItemLink {
+    color: white;
+}
+
+.sideBarMenuItem:hover .sideBarMenuItemLinkIcon {
+    color: white;
+    transition: 0.2s ease;
+}
+
+.sideBarMenuItem:hover .linkedIn,
+.sideBarMenuItem:hover .gitHub,
+.sideBarMenuItem:hover .linkedIn {
+    filter: saturate(1);
+}

@@ -1,0 +1,152 @@
+.aboutContainer {
+    width: 100%;
+    padding: 6vh 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: var(--logo-transition);
+    border: 1px dashed var(--bg-sec-color);
+}
+
+.aboutMainTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-h1);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-h1);
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: -0.06em;
+    word-spacing: 0.1em;
+    color: var(--primary-color);
+}
+
+.aboutMainDesc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: var(--font-family-p);
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-p);
+    text-align: center;
+    text-align-last: center;
+    color: var(--text-body-color);
+}
+
+.aboutSectionsContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.aboutSectionWrapper {
+    width: 25%;
+    min-width: 330px;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--text-header-color);
+}
+
+.aboutSectionFrontend {
+}
+.aboutSectionBackend {
+}
+.aboutSectionDesign {
+}
+
+.aboutMenuTitle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0.5vh;
+    font-family: var(--font-family-h1);
+    font-size: 1.8em;
+    font-weight: var(--font-weight-h1);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.aboutMenuWrapper {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.aboutMenuItemIcon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.html {
+    color: var(--html);
+}
+.css {
+    color: var(--css);
+}
+.js {
+    color: var(--js);
+}
+.webgl {
+    color: var(--webgl);
+}
+.react {
+    color: var(--react);
+}
+.ts {
+    color: var(--ts);
+}
+.node {
+    color: var(--node);
+}
+.express {
+    color: var(--express);
+}
+.mongo {
+    color: var(--mongo);
+}
+.rest {
+    color: var(--rest);
+}
+.canva {
+    color: var(--canva);
+}
+.figma {
+    color: var(--figma);
+}
+.adobe {
+    color: var(--adobe);
+}
+.git {
+    color: var(--git);
+}
+
+.aboutMenuItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-family-p);
+    font-size: 1.1em;
+    font-weight: var(--font-weight-p);
+    text-decoration: none;
+    cursor: pointer;
+    column-gap: 0.75em;
+    transition: 0.2s ease;
+}
+
+.aboutMenuItem:hover {
+    color: white;
+}
